@@ -11,9 +11,8 @@ __Meeting Times__:
 prior to the session.
 
 __Extra Information__:
-- If you would like review on CS 120 topics, take a look at the References folder above. It covers most (if not all) 
-possible review of the material you've worked on in CS 120 (that is, if you took that class at CSUF). The Weekly Work 
-folder includes all the work done at each SI session each week throughout the Fall 2014 semester.
+- The "Tips & Review" folder, as you may have guessed, hosts various information that may serve helpful to you within this course 
+(and later on).
 - If you need to contact me, my email is located at the bottom of this page (and all other pages in this repository). I can also 
 be contacted after class (I normally sit in the back, far left). 
 
