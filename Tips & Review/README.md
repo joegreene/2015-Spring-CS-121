@@ -2,7 +2,8 @@ Tips & Review
 =============
 
 This page consists of any topics from CPSC 120 or about the class that I (or any other minds) 
-consider useful to know for this class and beyond. Click the links above for more information.
+consider useful to know for this class and beyond. Click the files in the file listing above 
+for more information.
 
 My previous SI repositories can be accessed by checking the listings located on 
 [my GitHub profile page](http://www.github.com/joegreene). One was from my 120 SI in Spring 2014, 

@@ -8,8 +8,9 @@
 This page hosts both the worksheet and solutions used for this week's session(s).
 
 #### Information
-In the file listing above there are three files: This file (README), the worksheet from 
-this week (TO-BE-NAMED), and the solutions file (SOLUTIONS).
+In the file listing above there will be three files: This file (README), the worksheet for 
+this week (TO-BE-NAMED), and the solutions file (SOLUTIONS). At the moment, nothing is complete 
+and will be updated eventually.
 
 -------------------------------------------------------------------------------
 
