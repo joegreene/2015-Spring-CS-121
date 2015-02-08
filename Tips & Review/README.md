@@ -12,4 +12,4 @@ and the other was from my 121 SI in Fall 2014.
 
 Copyright &copy; 2015 Joseph Greene <joeisgreene@csu.fullerton.edu>  
 Released under [The MIT License] (http://opensource.org/licenses/MIT)  
-Project located at <https://github.com/joegreene/CS_121_Fall_2014>
+Project located at <https://github.com/joegreene/2015-Spring-CS-121>
