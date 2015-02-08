@@ -12,7 +12,7 @@ This hosts the activities we worked on during the SI class on Tuesday, 02/10/15.
 Below is a directory for the Tuesday notes from this week.
 
 #### Tuesday
-Notes from Tuesday's session are located [here](TUES_NOTES.md) or in the file listing above.
+TBD
 
 -------------------------------------------------------------------------------
 
