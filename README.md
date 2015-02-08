@@ -1,7 +1,7 @@
 2015-Spring-CS-121
 ==================
 
-Work used during the SI portion of the Spring 2015 CPSC 121 Class, Section , TuTh 8:30 - 9:20AM with Professor Frick.
+Work used during the SI portion of the Spring 2015 CPSC 121 Class, Section 15/16, TuTh 8:30 - 9:20AM with Professor Frick.
 
 
 __Meeting Times__: 
