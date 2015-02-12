@@ -1,14 +1,20 @@
-# Week 4 Solutions
+# Week 5
 
 ## Contents
 - [Intro](#intro)
-- [Questions](#questions)
+- [Topics](#topics)
+  - [Tuesday](#tuesday)
 
 ### Intro
-This hosts the activities we worked on during the SI class on Tuesday, 02/10/15.
+This hosts the activities we worked on during the SI class on Tuesday, 02/17/15.
 
-### Questions
-TBD
+### Topics
+Below is a directory for the Tuesday notes from this week.
+
+#### Tuesday
+Since we didn't work on a worksheet this week, there's no folder for it in this directory.
+
+
 
 -------------------------------------------------------------------------------
 
