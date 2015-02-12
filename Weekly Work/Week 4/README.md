@@ -15,6 +15,9 @@ This hosts the activities we worked on during the SI class on Tuesday, 02/10/15.
 Note that, since we didn't work on a worksheet this week, there's no folder for it 
 in this directory.
 
+__WARNING__: I normally type a lot when it comes to these notes, so I suggest you utilize the highlighted links in the topic list 
+above (to find anything you specifically want to look over). If you want to check everything out, that's great too.
+
 ### Topics
 Below is a directory for the Tuesday notes from this week.
 
