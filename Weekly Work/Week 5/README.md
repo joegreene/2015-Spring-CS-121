@@ -4,15 +4,19 @@
 - [Intro](#intro)
 - [Topics](#topics)
   - [Tuesday](#tuesday)
-
+  - [Wednesday](#wednesday)
+  
 ### Intro
-This hosts the activities we worked on during the SI class on Tuesday, 02/17/15.
+This hosts the activities we worked on during the SI class on Tuesday and Wednesday, 02/17 & 2/18.
 
 ### Topics
-Below is a directory for the Tuesday notes from this week.
+Below is a directory for the Tuesday and Wednesday notes from this week.
 
 #### Tuesday
-Since we didn't work on a worksheet this week, there's no folder for it in this directory.
+TBD
+
+#### Wednesday
+TBD
 
 
 
