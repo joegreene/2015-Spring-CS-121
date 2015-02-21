@@ -7,8 +7,8 @@
 ### Intro
 This hosts the solutions to the worksheet set for this week's SI session.
 
-Note that, as I try to emphasize every time when working with code: __There are many ways to solve a problem__. 
-My solutions might not always be the most efficiency, however I write my solutions in a way to 
+__There are many ways to solve a problem__. 
+My solutions might not always be the most efficient, however I write my solutions in a way to 
 explain concepts and to allow others to optimize them however they wish.
 
 ### Questions
