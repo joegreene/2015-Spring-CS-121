@@ -27,18 +27,18 @@ Vectors are simply resizable arrays.  Unlike the static arrays we're used to, th
 determined dynamically (that is, the amount of space they take up can change while the program is 
 running).
 
-If you wanted to make a vector of vectors (which works similarly to two-dimensional arrays, declare 
-the type of vector inside of the vector's body. Example:
+Example of vector declarations:
 ```C++
-  vector< vector<int> > two_dim_int; //makes a two-dimensional int array
+  vector<string>      string_vect;   //single-dimension vector of strings
+  vector<vector<int>> two_dim_int; //two-dimensional vector of vector of integers
 ```
 
-Note that vector of vectors are sometimes referred to as "jagged-arrays". This is because each position of the vector is a vector, 
+Note that vectors of vectors of some type are sometimes referred to as "jagged-arrays". This is because each position of the vector is a vector, 
 and each vector at each position doesn't have to be the same size as other positions (which, if drawn out, can give a "jagged" effect).
 
 For more dimensions just add more "vector <...>" inside. Just make sure to match-up the angled brackets (i.e. amount of `<` and `>` must be equal).
 ```
-  vector<vector<vector<vector<vector<int>>>>> this_is_out_of_control;
+  vector< vector< vector< vector< vector<int> > > > > this_is_out_of_control;
 ```
 
 Next, we talked about adding and removing elements to a vector. Check [here](http://www.cplusplus.com/reference/vector/vector/push_back/) for 

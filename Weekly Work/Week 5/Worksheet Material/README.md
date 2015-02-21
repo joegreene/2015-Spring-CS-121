@@ -9,8 +9,10 @@ This page hosts both the worksheet and solutions used for this week's session(s)
 
 #### Information
 In the file listing above there are three files: This file (README), the worksheet for 
-this week (CS 121 Week 5 Worksheet - ...), and the solutions file (SOLUTIONS). There is 
-also a `.cpp` file, which is explained about in the solutions file.
+this week (`CS 121 Week 5 Worksheet- Psuedocode, Arrays, and File IO.docx`), and the 
+solutions file (SOLUTIONS). 
+
+The other files (namely the .cpp files) are explained about in the solutions file.
 
 -------------------------------------------------------------------------------
 
