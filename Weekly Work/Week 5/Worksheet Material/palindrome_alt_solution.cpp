@@ -31,7 +31,6 @@ int main()
 {
   //Although the prompt never asks for this, this is just another way to set the file name up
   process_file("word_list.txt");
-  system("pause");
 
   return 0;
 }
