@@ -21,10 +21,12 @@ Anyways, you may refer to [here](https://github.com/joegreene/CS_121_Fall_2014/t
 for the pseudo-code solution. Specifically, refer to the second solution.
 
 Peers asked for a C++ example of how the solution 
-may look like, so I've provided one in the file listing above (labeled `palindrome_solution.cpp`).
+may look like, so I've provided one in the file listing labelled `palindrome_solution.cpp` located in the file listing of the previous page or
+[here](https://github.com/joegreene/2015-Spring-CS-121/blob/master/Weekly%20Work/Week%205/Worksheet%20Material/palindrome_solution.cpp).
 
 On top of that, I've also posted a solution which doesn't store the string (which is shorter and more 
-efficient). This is in the `palindrome_alt_solution.cpp` file.
+efficient). This is in the `palindrome_alt_solution.cpp` file in the listing of the previous page or 
+[here](https://github.com/joegreene/2015-Spring-CS-121/blob/master/Weekly%20Work/Week%205/Worksheet%20Material/palindrome_alt_solution.cpp).
 
 -------------------------------------------------------------------------------
 
