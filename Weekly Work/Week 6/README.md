@@ -4,7 +4,7 @@
 - [Intro](#intro)
 - [Topics](#topics)
   - [Tuesday](#tuesday)
-    - [`enum`](#`enum`)
+    - [`enum`](#enum)
   - [Wednesday](#wednesday)
     - [Classes](#classes)
     
@@ -20,14 +20,12 @@ Topics discussed
 - Classes (I moved the notes for these into the Wednesday portion)
 
 ##### `enum`
-In a concise way of explaining it: `enum` allows you to create a list of variables that are increments of one another.
- 
-^---FIX DEF 
+The top two comments on [this link](http://stackoverflow.com/questions/4564322/some-good-example-for-using-enums) explain enumeration really well. I suggest checking it out to understand them better.
 
-You can define the starting list by setting the first value equal to something. Default is `0`.
+These are used infrequently, so I wouldn't worry too much about remembering them in typical practice. They're still 
+good to have in your "bag of tricks" though.
 
-Although used infrequently, enum is especially helpful when developing a menu-driven program. For instance, 
-take a program that has a choice menu such as the following:
+Another example of `enum` I thought up of while typing this is a menu-driven program, which takes a choice through a menu such as the following:
 
 ```
   Please choose a movie from the list below:
@@ -42,7 +40,7 @@ take a program that has a choice menu such as the following:
   Enter choice: 
 ```
 
-You can have C++ syntax similar to the following:
+You can have C++ syntax similar to the following for the above output:
 ```C++
   //list of choices we want to test for; Start at 1 for choice 1
   enum{FIFTYSHADES = 1, IMITGAME, HOTTUB, UP, NEMO, EXIT};
@@ -83,8 +81,49 @@ We talked about the following topics:
 
 
 ##### Classes
-Starting off with a simple example (which is pretty similar to the one in the worksheet), 
+When defining classes, we typically use two files to do it: A header file, and a source file. We also have a third file, which is the file that uses and makes an instance (or instances) of this class (the client code).
 
+Typically, the format will be:
+- `ClassName.h`: The "blueprints" of the class (that is, this file has plans for what you want to implement)
+- `ClassName.cpp`: The "implementation" of the class (that is, the actual definition of the class's blueprints)
+- `main.cpp`: The "client" file (I normally call my source file with main as `main.cpp`, to keep track of things)
+
+Done sometimes is you can put your implementations within the header (`.h`) file, either below or inside the `class { ... };` portion.
+
+Starting off with a simple example (which is pretty similar to the one in the worksheet):
+
+`CRectangle.h`:
+```C++
+  #include <iostream>
+  
+  class CRectangle
+  {
+    private:
+      //
+    public:
+     //
+  };
+```
+
+`CRectangle.cpp`:
+```C++
+  //TODO
+  CRectangle::CRectangle()
+  {
+    //
+  }
+```
+`main.cpp`:
+```
+  //TODO
+  #include "CRectangle.h"
+  
+  int main()
+  {
+    //TODO
+    return 0;
+  }
+```
 -------------------------------------------------------------------------------
 
 Copyright &copy; 2015 Joseph Greene <joeisgreene@csu.fullerton.edu>  
