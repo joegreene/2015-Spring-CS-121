@@ -199,7 +199,7 @@ __NOTE__: Some clarifications about parts of the code are made after the test ru
   }
 ```
 
-`main.cpp`:
+`main.cpp` (try to make sense of this section by comparing the output window below):
 ```
   #include "CRectangle.h"
   
@@ -210,7 +210,20 @@ __NOTE__: Some clarifications about parts of the code are made after the test ru
   
   int main()
   {
-    //TODO
+    CRectangle first_rect;
+    CRectangle second_rect(-2.0, 12.0);
+    
+    first_rect.setWidth(14.0);
+    double height;                       //this name was intentional
+    cout << "Please enter a height: ";
+    cin  >> height;                      //assume user inputs 17.0
+    
+    cout << first_rect.computeArea() << endl;
+    cout << second_rect.getHeight()  << endl;
+    
+    first_rect.setWidth(height);
+    
+    cout << second_rect.computeArea() << endl << endl;
     
     return 0;
   }
@@ -218,8 +231,19 @@ __NOTE__: Some clarifications about parts of the code are made after the test ru
 
 Test run:
 ```
- TODO
+  Invalid height given: -2.0. Retaining old value (default is 1.0).
+  Please enter a height: 17.0          <-------- This is user input
+  14.0
+  12.0
+  204.0
+  
+  Destroyed instance of class CRectangle.
+  Destroyed instance of class CRectangle.
 ```
+
+The above is similar to an example we did in the Wednesday session. Try to go through it and understand why the output is the way it is. 
+
+__NOTE__: The last two lines will pop up very quickly (right before the program closes) if you decide to compile the code above. That means, to see the messages, you'll want to run the executable (made from the above code) via a terminal or command prompt.
 
 Some key parts to notice:
 - The files (`CRectangle.h`, `CRectangle.cpp`, and `main.cpp` must be in the same project folder.
