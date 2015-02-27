@@ -21,8 +21,8 @@ be contacted after class (I normally sit in the back, far left).
 I look forward to working with you guys this semester!
 
 
-__NOTE__: Most (if not all) updates to this repository are done between Friday evening and Saturday morning. If you've come 
-to check for updates on the weekly work, best time to check it out is Saturday.
+__NOTE__: Most (if not all) updates to this repository are done between Thursday evening and Friday evening. If you've come 
+to check for updates on the weekly work, best time to check it out is either midday Friday (or if I'm really lagging, Saturday).
 
 -------------------------------------------------------------------------------
 
