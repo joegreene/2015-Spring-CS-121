@@ -41,7 +41,7 @@ functionality.
 extremely frequently). Check [this](http://stackoverflow.com/questions/145838/benefits-of-inline-functions-in-c) too.
 
 #### Concept Questions
-1) Implementing "getRadius" and "getHeight" as inline :
+__1)__ Implementing "getRadius" and "getHeight" as inline :
 ```C++
   class FCylinder
   {
@@ -58,7 +58,7 @@ extremely frequently). Check [this](http://stackoverflow.com/questions/145838/be
 The above is an example of a function defined inline in a class. You can make any function inline, e.g. the example 
 at [this link](http://stackoverflow.com/questions/145838/benefits-of-inline-functions-in-c) (same as one mentioned in question 11).
 
-2) We want to pass an object by reference to have the ability to change its values. If we pass an object by-value 
+__2)__ We want to pass an object by reference to have the ability to change its values. If we pass an object by-value 
 through a function and call some function in the object to change one of its member variables then we will only affect 
 the object in the function (not the one passed as an argument). This is because we've sent a copy.
 
@@ -67,7 +67,7 @@ methods, etc.) a class can be large in general (in terms of byte-size). When wor
 and resources it would take to pass an object by-value would increase (and we don't want that). To solve this issue, we call using 
 a const-reference parameter.
 
-3) I named the class in case of possible conflicts in the future. Since we want to make our code work forever (or at least for a very 
+__3)__ I named the class in case of possible conflicts in the future. Since we want to make our code work forever (or at least for a very 
 long time before needing to edit it), if we ever include a library into this project that has a class called "Cylinder" already, the 
 compiler will not be able to compile your code. This is because it (the compiler) won't know which class to reference (your Cylinder or 
 the included library's Cylinder). 
@@ -75,7 +75,7 @@ the included library's Cylinder).
 There are ways around this (namely by using namespaces) but for typical code it's a good idea to give your class a prefix of some sort 
 to distinguish it (e.g. I used "F" for "FCylinder").
 
-5) Structures are used typically for making small objects, whereas classes are used for more complicated objects. For instance, if I needed 
+__5)__ Structures are used typically for making small objects, whereas classes are used for more complicated objects. For instance, if I needed 
 an object to account for a student's age, id, and gpa (and only those three things) you can use a structure to quickly code the object. If you 
 need something more advanced (e.g. a marketing program that takes into account customers, store transactions, etc. or a level with NPCs in a 
 video game) then use a class.
