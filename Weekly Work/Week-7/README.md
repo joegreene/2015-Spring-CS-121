@@ -9,7 +9,7 @@
       - [Why Use Pointers?](#why-use-pointers)
   - [Wednesday](#wednesday)
     - [Recursion](#recursion)
-    - [`argc` and `**argv`](#argc-and-**argv)
+    - [`argc` and `**argv`](#argc-and-argv)
     
 ### Intro
 
@@ -99,13 +99,13 @@ to mention this in the Tuesday session, in the Wednesday session we went over th
 ###### Why Use Pointers?
 
 From what I could come up with, there are three main points on why to bother working with pointers:
-- Efficiency: Make your programs more memory efficient (thus, giving compatibility to older systems or low-RAM devices like the typical smart phone)
+- __Efficiency__: Make your programs more memory efficient (thus, giving compatibility to older systems or low-RAM devices like the typical smart phone)
   - ex) Although the same can be accomplished with calling `by-reference`, `by-pointer` is a way you can send an address as an argument versus copying the entire thing (i.e. without `&` or `*`
   - ex) Take for instance a program that must load a gigabyte of data in it to compute some figures, and it only needs to do that at the beginning of the program. By usage of pointers, you can create the vector (or whatever other type needed) to store the data through a pointer using __new__. After you're done with it, just __delete__ it (so you're not using any RAM you might need to use later on).
-- Concept vs. Syntax: There's a difference between typing the code and actually understanding what's going on
+- __Concept vs. Syntax__:
   - Although it's required in CS 121/131 to apply your knowledge of pointer syntax (i.e. how to type code with pointers), it's much more important to understand how they work
     - As anyone in this class should be able to tell you: __Pointers are addresses__. They __refer__ to memory already allocated (such as the 4 bytes allocated for `int num`).
-- Experience/Application: You won't have a necessity for using pointers in this class, however you will when you reach 131. Best to prepare yourself sooner than later.
+- __Experience & Application__: You won't have a necessity for using pointers in this class, however you will when you reach 131. Best to prepare yourself sooner than later.
   - Assuming we'll all be working with code (not necessarily C++) in some way outside college, it'll be highly improbable to never see/use a pointer
     - This holds especially true if you're working on something that requires access to low level components (such as an operating system)
     - This also applies to making programs that require serious amounts of optimization (i.e. making your program in a low level language like C or an Assembly language)
@@ -358,6 +358,13 @@ Which, given the above, would have a program like the following handle the argum
     return 0;
   }
 ```
+
+Last note (and I swear, since this page is getting too long): As the arguments above are "executable_to_run" then anything after that, the example Frick gave:
+```
+  iwconfig wlan0
+```
+
+is an example of running a command `iwconfig` and an argument `wlan0`.
 
 -------------------------------------------------------------------------------
 
