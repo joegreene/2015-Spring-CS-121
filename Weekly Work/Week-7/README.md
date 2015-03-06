@@ -250,7 +250,9 @@ To actually use these parameters to something useful, you need to run your execu
 
 An example of how this may look in Linux (which should be similar to Mac OSX); (The below was run on my laptop):
 ```
-  joe@joe-Lenovo-IdeaPad-Y580 ~ $ cd ~/Desktop/program_test/
+  joe@joe-Lenovo-IdeaPad-Y580 ~/Desktop/Week 7 $ cd ~/Desktop/program_test/
+  joe@joe-Lenovo-IdeaPad-Y580 ~/Desktop/program_test $ dir
+  main.cpp  prgm.exe
   joe@joe-Lenovo-IdeaPad-Y580 ~/Desktop/program_test $ ./prgm.exe
   Argument Count: 1
 
@@ -269,6 +271,7 @@ An example of how this may look in Linux (which should be similar to Mac OSX); (
   (3):etc
 
   joe@joe-Lenovo-IdeaPad-Y580 ~/Desktop/program_test $ 
+
 ```
 
 Parts to note (just to help you understand the above example):
@@ -279,14 +282,16 @@ Here's what I did per line:
 - `cd ~/Desktop/program_test/`: This means I changed my directory over to wherever my executable exists (for me, it was on my Linux system's desktop in a folder called `program_test`).
   - Note that the beginning part changes to where your executable is located.
   - Second note: If your directory has spaces in it (e.g. if my folder was instead "program test" without the underscore) you would type: `cd ~/Desktop/program\ test/`, where `\` lets the terminal know that there is a space in the directory name
+- `dir`: This was to help me see what files were in the current directory I was at. In this case, it was my source file (`main.cpp`) and my executable file I compiled previously (`prgm.exe`).
 - `./prgm.exe`: This is how you run an executable program (my executable's name is `prgm.exe`, compile from the source code below this section)
   - Right below this is the output of the program (which is similar to how Visual Studio works, as it outputs stuff to command prompt)
 - `./prgm.exe test arg3 etc`: This is me showing off how you can give more than one argument when running an executable. The output below shows which index each 
 - Last line (` ~/Desktop/program_test $ `) is empty since the terminal is waiting for another command.
 
-For Windows you do a similar process:
+For Windows you do the same process, except some of the commands differ:
 - Open up cmd.exe (through the search bar)
 - Use `cd` to change to wherever your program's executable is located (e.g. `cd "C:\Users\Joe\Documents\Visual Studio 2012\program_test\program_test\release"`) where quotations are used when there is a space in the directory.
+  - If you aren't sure where you are with `cd`, you can use `dir` to list all the files in the current directory you're viewing (like I did in my example).
 - To run an executable, just type the name of the executable (e.g. for mine I would type `prgm.exe`).
   - To add arguments, type then straight after the first argument (e.g. `prgm.exe 12 13 third_argument etc`).
 - The output will be right below (just like when Visual Studio outputs your code to console).
