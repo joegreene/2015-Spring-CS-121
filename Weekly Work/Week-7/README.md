@@ -244,7 +244,7 @@ I don't know if Professor Frick mentioned this during either lab, but the `argc`
 
 Some definitions before continuing on:
 - `argc` means "argument count"
-- `**argv` is a list of argument c-strings. Remember how pointers can make arrays? `**` means to make an array of arrays, or in this case a list of c-strings (character arrays).
+- `**argv` is a list of argument c-strings. Remember how pointers can make arrays? `**` means to make a pointer of pointers, or specifically in this case a dynamically-created list of c-strings (which are dynamically-made character arrays here as each argument can have a different amount of characters).
 
 To actually use these parameters to something useful, you need to run your executable through command prompt (Windows) or terminal (Mac OSX/Linux).
 
