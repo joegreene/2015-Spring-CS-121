@@ -95,14 +95,14 @@ The fifth line is a little funky, but if we think of `index` and `a` as integers
 
 Recall that the ASCII value for `a` is `97`. If we subtract whatever .
 
-Make sense? If not, take a look at the examples below:
+Make sense? If not, take a look at the examples below (half-pseudo-code, half-c++):
 ```
   1. str = "Anteater"
-     index = a (this is the lower case version of the first character in str)
+     index = a                                                       //this is the lower case version of the first character in str
      lists[index-'a'] = lists['a' - 'a'] = lists[97 - 97] = lists[0] //we push a string into this position, as mentioned in the above code
   
   2. str = "IAmCool";
-     index = i (lower case version of first character in str)
+     index = i                                                      //lower case version of first character in str
      lists[index-'a'] = lists['i'-'a'] = lists[105 - 97] = lists[8] //we push a string into this position, known as position 9 or index 8
      
   3. str = "Supercalifragilisticexpialidocious" 
@@ -110,10 +110,9 @@ Make sense? If not, take a look at the examples below:
 
 Try out the third one first on your own. Remember to refer to the ASCII chart (unless you've for some reason calculated/memorized the value).
 
-Click the area below this text for the solution.
->! index = s
-
->! lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
+SOLUTION:
+> index = s                                                     //lowercase s from first letter of str
+> lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
 
 
 ##### By-Reference vs By-Value
@@ -143,13 +142,12 @@ The errors of each are located below each segment (hover to view solution).
      cout << sum << endl; //what is sum with/without change to i?
    ```
    
-   SOLUTION (Hover/Click to view):
+   SOLUTION:
    
-   >! Errors: - starting sum should be 0, 
-   
-   >!         - undeclared i in for loop, 
-   
-   >!         - no "length" function for arrays
+   > Errors: 
+   >    - starting sum should be 0, 
+   >    - undeclared `i` in for loop, 
+   >    - no "length" function for arrays
 
 2) PROBLEM:
    ```C++
@@ -187,12 +185,13 @@ The errors of each are located below each segment (hover to view solution).
      }
    ```
    
-   SOLUTION (Hover/Click to view):
+   SOLUTION:
    
-   >! Errors:- Missing '( )' for call to print_menu
-   >!        - cin using insertion operator (should be extraction)
-   >!        - Using single quotes for cases (i.e. don't use quotes if checking integer)
-   >!        - Missing break statements (every case requires except default)
+   > Errors:
+   >    - Missing '( )' for call to print_menu
+   >    - cin using insertion operator (should be extraction)
+   >    - Using single quotes for cases (i.e. don't use quotes if checking integer)
+   >    - Missing break statements (every case requires except default)
 
 3) PROBLEM:
    ```C++
@@ -222,17 +221,14 @@ The errors of each are located below each segment (hover to view solution).
      }
    ```
    
-   SOLUTION (Hover/Click to view):
+   SOLUTION:
    
-   >! Errors: - Invalid parameter in struct version of init_employee (should be Employee e)
-   
-   >!         - struct is missing semi-colon at end of it
-   
-   >!         - Must call by-reference/pointer for both init_employee
-   
-   >!         - Two missing semi-colons in both init_employee (first cout, second cin)
-   
-   >!         - Can't directly call "cout << emp;" in main (emp is an Employee)
+   > Errors: 
+   >    - Invalid parameter in struct version of init_employee (should be Employee e)
+   >    - struct is missing semi-colon at end of it
+   >    - Must call by-reference/pointer for both init_employee
+   >    - Two missing semi-colons in both init_employee (first cout, second cin)
+   >    - Can't directly call "cout << emp;" in main (`emp` is an `Employee`)
 
 4) PROBLEM:
    ```C++
@@ -251,11 +247,12 @@ The errors of each are located below each segment (hover to view solution).
      }
    ```
    
-   SOLUTION (Hover/Click to view):
+   SOLUTION:
    
-   > Errors: - No "add" function in vector (use push_back)
-   >         - No "length" function with vectors. Use "size()"
-   >         - "--i" gives erroneous results (and not even necessary as we can call ".back()")
+   > Errors: 
+   >    - No "add" function in vector (use push_back)
+   >    - No "length" function with vectors. Use "size()"
+   >    - "--i" gives erroneous results (and not even necessary as we can call ".back()")
 
 -------------------------------------------------------------------------------
 
