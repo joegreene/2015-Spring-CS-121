@@ -112,6 +112,7 @@ Try out the third one first on your own. Remember to refer to the ASCII chart (u
 
 Click the area below this text for the solution.
 >! index = s
+
 >! lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
 
 
@@ -145,7 +146,9 @@ The errors of each are located below each segment (hover to view solution).
    SOLUTION (Hover/Click to view):
    
    >! Errors: - starting sum should be 0, 
+   
    >!         - undeclared i in for loop, 
+   
    >!         - no "length" function for arrays
 
 2) PROBLEM:
@@ -222,9 +225,13 @@ The errors of each are located below each segment (hover to view solution).
    SOLUTION (Hover/Click to view):
    
    >! Errors: - Invalid parameter in struct version of init_employee (should be Employee e)
+   
    >!         - struct is missing semi-colon at end of it
+   
    >!         - Must call by-reference/pointer for both init_employee
+   
    >!         - Two missing semi-colons in both init_employee (first cout, second cin)
+   
    >!         - Can't directly call "cout << emp;" in main (emp is an Employee)
 
 4) PROBLEM:
@@ -246,9 +253,9 @@ The errors of each are located below each segment (hover to view solution).
    
    SOLUTION (Hover/Click to view):
    
-   >! Errors: - No "add" function in vector (use push_back)
-   >!         - No "length" function with vectors. Use "size()"
-   >!         - "--i" gives erroneous results (and not even necessary as we can call ".back()")
+   > Errors: - No "add" function in vector (use push_back)
+   >         - No "length" function with vectors. Use "size()"
+   >         - "--i" gives erroneous results (and not even necessary as we can call ".back()")
 
 -------------------------------------------------------------------------------
 
