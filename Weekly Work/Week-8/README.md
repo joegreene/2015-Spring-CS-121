@@ -99,11 +99,11 @@ Make sense? If not, take a look at the examples below:
 ```
   1. str = "Anteater"
      index = a (this is the lower case version of the first character in str)
-     lists[index-'a'] = lists['a' - 'a'] = lists[97 - 97] = lists[0] (we push a string into this position, as mentioned in the above code)
+     lists[index-'a'] = lists['a' - 'a'] = lists[97 - 97] = lists[0] //we push a string into this position, as mentioned in the above code
   
   2. str = "IAmCool";
      index = i (lower case version of first character in str)
-     lists[index-'a'] = lists['i'-'a'] = lists[105 - 97] = lists[8] (we push a string into this position, known as position 9 or index 8)
+     lists[index-'a'] = lists['i'-'a'] = lists[105 - 97] = lists[8] //we push a string into this position, known as position 9 or index 8
      
   3. str = "Supercalifragilisticexpialidocious" 
 ```
@@ -112,7 +112,7 @@ Try out the third one first on your own. Remember to refer to the ASCII chart (u
 
 Click the area below this text for the solution.
 >! index = s
->! lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] (push str into the 19th vector of strings in lists)
+   lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
 
 
 ##### By-Reference vs By-Value
