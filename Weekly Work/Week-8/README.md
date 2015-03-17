@@ -112,7 +112,7 @@ Try out the third one first on your own. Remember to refer to the ASCII chart (u
 
 Click the area below this text for the solution.
 >! index = s
-   lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
+>! lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
 
 
 ##### By-Reference vs By-Value
@@ -133,43 +133,122 @@ The errors of each are located below each segment (hover to view solution).
 
 1) PROBLEM:
    ```C++
-   
+     int sum = 1;
+     int arr[] = {5, 2, 3, 4, 9, 6, 7};
+     for(i = 1; i < arr.length(); i+=1) 
+     {
+       sum+=arr[i];
+     }
+     cout << sum << endl; //what is sum with/without change to i?
    ```
    
    SOLUTION (Hover/Click to view):
    
-   >! Test text
-   >! Test text 2
+   >! Errors: - starting sum should be 0, 
+   >!         - undeclared i in for loop, 
+   >!         - no "length" function for arrays
 
 2) PROBLEM:
    ```C++
-   
+     void print_menu()
+     {
+       cout << "Select a movie:\n1. Spider man\n2. Hello World\n3. Shawshank Redemption\n4. Exit\n";
+       cout << "Enter option: ";
+     }
+
+     int main()
+     {
+       int choice;
+       do 
+       {
+         print_menu;
+         cin << choice;
+
+         switch(choice)
+         {
+           case '1':
+             cout << "Spider man";
+           case '2':
+             cout << "Hello World";
+           case '3':
+             cout << "Shawshank Redemption";
+           case '4':
+              cout << "Exiting program...";
+           default:
+              cout << "Invalid option";
+         }
+         cout << endl;  
+
+       }while(choice != 4);
+       return 0;
+     }
    ```
    
    SOLUTION (Hover/Click to view):
    
-   >! Test text
-   >! Test text 2
+   >! Errors:- Missing '( )' for call to print_menu
+   >!        - cin using insertion operator (should be extraction)
+   >!        - Using single quotes for cases (i.e. don't use quotes if checking integer)
+   >!        - Missing break statements (every case requires except default)
 
 3) PROBLEM:
    ```C++
-   
+     struct Employee {
+       string name;
+       int ssn;
+     }
+     
+     void init_employee(struct e)
+     {
+       cout << "Enter employee name (use hyphens for spaces): "
+       cin >> name;
+       cout << "Enter employee's ssn: ";
+       cin >> ssn
+     }
+
+     int main()
+     {
+       Employee emp
+       init_employee(emp);    
+
+       cout << emp;
+       cout << employee;
+       cout << ssn;
+
+       return 0;
+     }
    ```
    
    SOLUTION (Hover/Click to view):
    
-   >! Test text
-   >! Test text 2
+   >! Errors: - Invalid parameter in struct version of init_employee (should be Employee e)
+   >!         - struct is missing semi-colon at end of it
+   >!         - Must call by-reference/pointer for both init_employee
+   >!         - Two missing semi-colons in both init_employee (first cout, second cin)
+   >!         - Can't directly call "cout << emp;" in main (emp is an Employee)
 
 4) PROBLEM:
    ```C++
-   
+     vector<double> dbl_list;
+
+     dbl_list.add(3.14);
+     dbl_list.add(2.718);
+     dbl_list.add(33.4412312);
+
+     int i = dbl_list.length() - 1; //set equal to last index of dbl_list
+
+     while(dbl_list.empty())
+     {
+       cout << dbl_list[--i] << " ";
+       dbl_list.pop_back();
+     }
    ```
    
    SOLUTION (Hover/Click to view):
    
-   >! Test text
-   >! Test text 2
+   >! Errors: - No "add" function in vector (use push_back)
+   >!         - No "length" function with vectors. Use "size()"
+   >!         - "--i" gives erroneous results (and not even necessary as we can call ".back()")
 
 -------------------------------------------------------------------------------
 
