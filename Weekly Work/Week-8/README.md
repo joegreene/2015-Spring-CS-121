@@ -110,8 +110,9 @@ Make sense? If not, take a look at the examples below (half-pseudo-code, half-c+
 
 Try out the third one first on your own. Remember to refer to the ASCII chart (unless you've for some reason calculated/memorized the value).
 
-SOLUTION:
+__SOLUTION__:
 > index = s                                                     //lowercase s from first letter of str
+> 
 > lists[index-'a'] = lists['s'-'a'] = lists[115-97] = lists[18] //push str into the 19th vector of strings in lists
 
 
@@ -142,14 +143,14 @@ The errors of each are located below each segment (hover to view solution).
      cout << sum << endl; //what is sum with/without change to i?
    ```
    
-   SOLUTION:
+   __SOLUTION__:
    
    > Errors: 
    >    - starting sum should be 0, 
    >    - undeclared `i` in for loop, 
    >    - no "length" function for arrays
 
-2) PROBLEM:
+2) __PROBLEM__:
    ```C++
      void print_menu()
      {
@@ -185,7 +186,7 @@ The errors of each are located below each segment (hover to view solution).
      }
    ```
    
-   SOLUTION:
+   __SOLUTION__:
    
    > Errors:
    >    - Missing '( )' for call to print_menu
@@ -193,7 +194,7 @@ The errors of each are located below each segment (hover to view solution).
    >    - Using single quotes for cases (i.e. don't use quotes if checking integer)
    >    - Missing break statements (every case requires except default)
 
-3) PROBLEM:
+3) __PROBLEM__:
    ```C++
      struct Employee {
        string name;
@@ -221,7 +222,7 @@ The errors of each are located below each segment (hover to view solution).
      }
    ```
    
-   SOLUTION:
+   __SOLUTION__:
    
    > Errors: 
    >    - Invalid parameter in struct version of init_employee (should be Employee e)
@@ -230,7 +231,7 @@ The errors of each are located below each segment (hover to view solution).
    >    - Two missing semi-colons in both init_employee (first cout, second cin)
    >    - Can't directly call "cout << emp;" in main (`emp` is an `Employee`)
 
-4) PROBLEM:
+4) __PROBLEM__:
    ```C++
      vector<double> dbl_list;
 
@@ -247,7 +248,7 @@ The errors of each are located below each segment (hover to view solution).
      }
    ```
    
-   SOLUTION:
+   __SOLUTION__:
    
    > Errors: 
    >    - No "add" function in vector (use push_back)
