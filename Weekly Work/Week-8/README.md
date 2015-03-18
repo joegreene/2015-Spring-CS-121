@@ -86,6 +86,7 @@ Through your current knowledge on ASCII values, try to determine what the follow
 ```
 
 First four lines are (hopefully) simple: 
+
 1. We first make an array of 26 slots, where each slot is a vector of strings (i.e. a dynamic array of strings per slot). The comment of this line above refers specifically to its usage in this application.
 2. Create `string` variable named `str`
 3. Grab a string from console input
@@ -228,9 +229,9 @@ The errors of each are located below each segment (hover to view solution).
    > Errors: 
    >    - Invalid parameter in struct version of init_employee (should be Employee e)
    >    - struct is missing semi-colon at end of it
-   >    - Must call by-reference/pointer for both init_employee
-   >    - Two missing semi-colons in both init_employee (first cout, second cin)
-   >    - Can't directly call "cout << emp;" in main (`emp` is an `Employee`)
+   >    - Must call by-reference/pointer the struct for `init_employee`
+   >    - Two missing semi-colons in `init_employee` (first cout, second cin)
+   >    - Can't directly call `cout << emp;` in main (`emp` is an `Employee`)
 
 4) __PROBLEM__:
    ```C++
@@ -254,7 +255,7 @@ The errors of each are located below each segment (hover to view solution).
    > Errors: 
    >    - No "add" function in vector (use push_back)
    >    - No "length" function with vectors. Use "size()"
-   >    - "--i" gives erroneous results (and not even necessary as we can call ".back()")
+   >    - `--i` gives erroneous results (and not even necessary as we can call ".back()" to get the last value of the list)
 
 -------------------------------------------------------------------------------
 
