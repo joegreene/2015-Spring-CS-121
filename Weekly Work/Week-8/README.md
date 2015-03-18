@@ -91,9 +91,10 @@ First four lines are (hopefully) simple:
 3. Grab a string from console input
 4. Set a char called index to the *lower case* version of the first character in `str`
 
-The fifth line is a little funky, but if we think of `index` and `a` as integers, it makes perfect sense.
+The fifth line is a little funky, however if we think of `index` and `a` as integers, it makes perfect sense.
 
-Recall that the ASCII value for `a` is `97`. If we subtract whatever .
+Recall that the ASCII value for `a` is `97`. If we subtract a lowercase letter by the letter `a` (note it must be LOWERCASE a), we get the index 
+we want in the array.
 
 Make sense? If not, take a look at the examples below (half-pseudo-code, half-c++):
 ```
