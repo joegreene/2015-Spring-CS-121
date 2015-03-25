@@ -8,7 +8,7 @@
     - [`friend` classes](#friend-classes)
     - [`static` keyword](#static-keyword)
   - [Wednesday](#wednesday)
-    - [Copy Constructors](#copy-constructor)
+    - [Copy Constructors](#copy-constructors)
     - [Operator Overloading](#operator-overloading)
   
 ### Intro
