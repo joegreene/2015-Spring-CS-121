@@ -9,9 +9,9 @@ This page hosts both the worksheet and solutions used for this week's session(s)
 
 #### Information
 In the file listing above there are three files: 
-- This file (`README`)
+- This file (`README.md`)
 - The worksheet for this week (`CS 121 Week 10 Worksheet - Friend and Operator Overloading.docx`)
-- The solutions file (`SOLUTIONS`).
+- The solutions file (`SOLUTIONS.md`).
 
 Remember that, to view the worksheet file, click it in the above directory. Afterwards, click 
 "View Raw File". That'll let you download the file and view it.

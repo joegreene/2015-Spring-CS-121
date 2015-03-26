@@ -21,9 +21,12 @@ If you see any errors or parts are confusing please let me know (via email or in
 1) Using the given `==` and `<` operator overloads, we can do the following:
 
 ```C++
-  bool Dog::operator> (const Dog& lhs, const Dog& rhs)  { return !(lhs < rhs) || (lhs == rhs)); }
-  bool Dog::operator<= (const Dog& lhs, const Dog& rhs) { return !(lhs > rhs); }
-  bool Dog::operator>= (const Dog& lhs, const Dog& rhs) { return !(lhs < rhs); }
+  bool Dog::operator>  (const Dog& lhs, const Dog& rhs)  { return !(lhs < rhs) || (lhs == rhs)); }
+  
+  bool Dog::operator<= (const Dog& lhs, const Dog& rhs) { return !(lhs > rhs); }  //alternatively, (lhs < rhs || lhs == rhs)
+  
+  bool Dog::operator>= (const Dog& lhs, const Dog& rhs) { return !(lhs < rhs); }  //alternatively, (lhs > rhs || lhs == rhs)
+                                                                                  //alternatively, (lhs >= rhs)
   bool Dog::operator!= (const Dog& lhs, const Dog& rhs) { return !(lhs == rhs); }
 ```
 
@@ -33,11 +36,13 @@ __NOTE 1__: To understand how to get these answers, think of how the logic works
 if you've taken a circuits class or any sort of logic course):
 
 ```
-  "greater than" is equivalent to saying "not less than or equal to"
-  "less than or equal to" is the same as saying "not greater than"
-  "greater than or equal to" is the same as saying "not less than"
-  The last one on the above list is trivial.
+  1. "greater than" is equivalent to saying "not less than or equal to"
+  2. "less than or equal to" is the same as saying "not greater than" OR saying "less than OR equal to"
+  3. "greater than or equal to" is the same as saying "not less than" OR saying "greater than OR equal to"
+  4. The last one in the above list is trivial.
 ```
+
+Main idea is to know that you can define other operators with ones you have already have defined.
 
 __NOTE 2__: If you want to be super safe with the comparison operators, you can enforce nothing gets edited 
 inside of the method by making the method `const`, like so:
