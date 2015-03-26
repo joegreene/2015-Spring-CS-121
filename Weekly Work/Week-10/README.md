@@ -15,6 +15,8 @@
 
 This hosts the activities we worked on during the SI class on Tuesday and Wednesday, 3/24 & 3/25.
 
+Check out the `Worksheet Material` folder above (in the file listing) for the worksheet we worked on.
+
 ### Topics
 
 Below is a list of the Tuesday & Wednesday session notes. 
