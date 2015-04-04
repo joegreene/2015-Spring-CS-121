@@ -128,7 +128,7 @@ Jokes aside, there are practical uses to operator overloading. For a few example
 
 Two operators I overload a lot are the `<<` (insertion) operator, which allows for printing objects easily, and the `>>` (extraction) operator, for defining a class instance by user input. An example of each is in this week's worksheet's notes/solutions.
 
-The most useful resource I've found regarding operator overloading is [this StackOverflow page](stackoverflow.com/questions/4421706/operator-overloading/4421719). Especially under "Common operators to overload", the page hosts a ton of examples regarding operator overloading.
+The most useful resource I've found regarding operator overloading is [this StackOverflow page](http://stackoverflow.com/questions/4421706/operator-overloading/4421719). Especially under "Common operators to overload", the page hosts a ton of examples regarding operator overloading.
 
 Another resource that might seem useful: http://www.thegeekstuff.com/2013/09/cpp-operator-overloading/
 
