@@ -55,7 +55,7 @@ Second way:
 
 Both examples above do exactly the same operation. The first implies `this->`, and the second (which is more readable in my opinion) uses `this->` explicitly.
 
-[Here's](http://stackoverflow.com/questions/993352/when-should-i-make-explicit-use-of-the-this-pointer) a good reference for this as well as the powerpoint notes.
+[Here's](http://stackoverflow.com/questions/993352/when-should-i-make-explicit-use-of-the-this-pointer) a good reference for this as well (ignore the `template` stuff on there) as the powerpoint notes.
 
 
 
