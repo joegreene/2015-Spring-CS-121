@@ -26,6 +26,8 @@ Topics we discussed:
 - Class Inheritance
 - Invoke Parent Constructor Explicitly
 
+There isn't too much to the notes for this week since the topics for this week are noted quite well in the power point notes and are widespread online.
+
 ##### Class Inheritance
 There are tons of resources for this material online that help well, such as [this link](http://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm).
 
@@ -35,11 +37,10 @@ __Constructors__: Highest class in the hierarchy is called, then second-highest,
 
 __Destructors__: Own destructor is called, then parent, then parent's parent, etc.
 
-##### Invoke Parent Constructor
+##### Invoke Parent Constructor Explicitly
 You mainly need to do this if you want to call a specific constructor of a base/parent class. Otherwise, the default constructor is called automatically.
 
-I think [this stackoverflow link](http://stackoverflow.com/questions/120876/c-superclass-constructor-calling-rules) explains how to do so very well already, so 
-here you go.
+I think [this stackoverflow link](http://stackoverflow.com/questions/120876/c-superclass-constructor-calling-rules) explains how to do so very well already, so here you go.
 
 -------------------------------------------------------------------------------
 
