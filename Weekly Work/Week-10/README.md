@@ -103,7 +103,7 @@ Example of operator overloading:
 
 If we had a `Dog` class with the `+` operator overloaded (i.e. we want to add two `Dog` instances together):
 ```C++
-  int Dog::operator+(const Dog& left, const Dog& right)
+  int Dog::operator+(const Dog& right)  //do not need to refer to the left one because that's the one calling "+"
   {
     return 5; //as defined above, for this example I want to return an integer after adding two Dog instances.
   }
@@ -112,6 +112,8 @@ If we had a `Dog` class with the `+` operator overloaded (i.e. we want to add tw
 If both `husky` and `retriever` were `Dog` instances, doing the following:
 ```C++
   cout << "A husky and a golden retriever added yields: " << husky + retriever << endl;
+  
+  //alternatively, "husky + retriever" can be rewritten as "husky.operator+(retriever)"
 ```
 
 Will display:
@@ -121,7 +123,7 @@ Will display:
 
 Jokes aside, there are practical uses to operator overloading. For a few examples:
 - Defining a `MathVector` class and doing operations with it (e.g. dot product, crossproduct, addition, etc.)
-- Creating your own array class, so you can do operators like appending two arrays (`+` operator, naturally)
+- Creating your own array class, so you can do operators like appending two arrays (by using the `+` operator, naturally)
 - etc.
 
 Two operators I overload a lot are the `<<` (insertion) operator, which allows for printing objects easily, and the `>>` (extraction) operator, for defining a class instance by user input. An example of each is in this week's worksheet's notes/solutions.
