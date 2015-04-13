@@ -18,16 +18,16 @@ For the prompt, look at the worksheet file (the .docx file in the file listing a
 If you see any errors or parts are confusing please let me know (via email or in class) and I'll fix them.
 
 #### Problems
-1) Using the given `==` and `<` operator overloads, we can do the following:
+1) Using the given `==` and `<` operator overloads, we can do the following (remember that `this` is a pointer!):
 
 ```C++
-  bool Dog::operator>  (const Dog& lhs, const Dog& rhs)  { return !(lhs < rhs) || (lhs == rhs)); }
+  bool Dog::operator>  (const Dog& rhs)  { return !(*this < rhs) || (*this == rhs)); }
   
-  bool Dog::operator<= (const Dog& lhs, const Dog& rhs) { return !(lhs > rhs); }  //alternatively, (lhs < rhs || lhs == rhs)
+  bool Dog::operator<= (const Dog& rhs) { return !(*this > rhs); }  //alternatively, (*this < rhs || *this == rhs)
   
-  bool Dog::operator>= (const Dog& lhs, const Dog& rhs) { return !(lhs < rhs); }  //alternatively, (lhs > rhs || lhs == rhs)
-                                                                                  //alternatively, (lhs >= rhs)
-  bool Dog::operator!= (const Dog& lhs, const Dog& rhs) { return !(lhs == rhs); }
+  bool Dog::operator>= (const Dog& rhs) { return !(*this < rhs); }  //alternatively, (*this > rhs || *this == rhs)
+                                                                    //alternatively, (*this >= rhs)
+  bool Dog::operator!= (const Dog& rhs) { return !(*this == rhs); }
 ```
 
 Hooray for reusability!
@@ -48,9 +48,9 @@ __NOTE 2__: If you want to be super safe with the comparison operators, you can 
 inside of the method by making the method `const`, like so:
 
 ```C++
-  bool Dog::operator== (const Dog& lhs, const Dog& rhs) const //<--- const here!
+  bool Dog::operator== (const Dog& rhs) const //<--- const here!
   {
-    return ((lhs.age == rhs.age) && (lhs.name && rhs.name));
+    return ((this->age == rhs.age) && (this->name && rhs.name));
   }
 ```
 
