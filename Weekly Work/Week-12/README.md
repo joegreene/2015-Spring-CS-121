@@ -31,6 +31,9 @@ There isn't too much to the notes for this week since the topics for this week a
 ##### Class Inheritance
 There are tons of resources for this material online that help well, such as [this link](http://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm).
 
+[Another page](http://www.parashift.com/c++-faq-lite/private-inheritance.html), for distinguishing the three 
+inheritance types.
+
 You'll also want to note how constructors/destructors of a class hierarchy are called:
 
 __Constructors__: Highest class in the hierarchy is called, then second-highest, all the way down to the class's parent, then its own constructor is called.
