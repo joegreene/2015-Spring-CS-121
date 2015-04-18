@@ -5,7 +5,7 @@
 - [Topics](#topics)
   - [Tuesday](#tuesday)
   - [Wednesday](#wednesday)
-    - [Extra Notes on Inheritance](#extra-notes-on-inhertiance)
+    - [Extra Notes on Inheritance](#extra-notes-on-inheritance)
     - [Factory Functions](#factory-functions)
     - [`virtual` Keyword](#virtual-keyword)
   
@@ -30,6 +30,7 @@ Topics we discussed:
 
 ##### Extra Notes on Inheritance
 Two important notes regarding class inheritance:
+
 1) __Classes only know of other classes in their branch.__ For instance with an `Animal` hierarchy, a `Dog` knows of `Animal` but doesn't know of a `Cat`. A `Poodle` knows of a `Dog` but not of a `Persian` cat. Classes only go above or below themselves, not across branches.
 
 2) __How constructors/destructors are called__. Before creating an object of a class, it first checks if it has a parent. If so, it tries to invoke its parent constructor. Same goes with the parent's parent, and so on until it reaches the top. The default constructor of each is called (unless specified by an initialization list).
@@ -131,7 +132,7 @@ If, however, we plan to call "yell_job" from each employee, we come to an issue.
 
 Which is not what we want because we want to print `I AM AN ACCOUNTANT` for an `Accountant`, and so on for the others. This can be fixed by two methods:
 
-1) Using "static_cast" as such (which doesn't help so much in our case):
+1) Using "static_cast" to convert the `Employee*` to another type (which doesn't help so much in our case):
 ```C++
   //This unfortunately doesn't help since we want to have different types of Employees in the list
   static_cast<Accountant*>(emp_list[i]).yell_job();
