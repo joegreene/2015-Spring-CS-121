@@ -8,11 +8,12 @@
   - [Syntax](#syntax)
   
 ### Intro
-
 This hosts the activities we worked on during the SI class on Tuesday, Wednesday, and Thursday, 5/5 - 5/7.
 
 ### Solutions
-Below are the solutions per section.
+Below are the solutions per section. If you have any questions or believe I have made any errors, please email me to let me know.
+
+My email is located at the bottom of this page.
 
 #### Terms
 Although this will help you with a chunk of the terms on the exam, the best thing you can do for yourself is 
@@ -20,15 +21,15 @@ make flashcards to know these.
 
 __H__ Data Abstraction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __E__ Operator overloading
 
-__K__ Derived class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __G__ Encapsulation
+__K__ Derived class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __G__ Encapsulation
 
-__N__ Inheritance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __L__ Object
+__N__ Inheritance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __L__ Object
 
-__B__ friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __M__ Abstract Function
+__B__ friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __M__ Abstract Function
 
-__F__ Polymorphism &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __J__ Base class
+__F__ Polymorphism &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __J__ Base class
 
-__I__ Template &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __C__ Static
+__I__ Template &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __C__ Static
 
 __D__ Copy Constructor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __A__ this
 
@@ -36,21 +37,21 @@ Note also that there is a difference between `Data Abstraction` and `abstract fu
 the first refers to [a characteristic of object-oriented programming](http://www.tutorialspoint.com/cplusplus/cpp_data_abstraction.htm), and the other refers to polymorphism.
 
 #### Concept
-1) Recursive call and base case. Two examples: Factorial and Tower of Hanoi game.
+1) __Recursive call__ and __base case__. Two examples: __Factorials__ and a solution to the __Tower of Hanoi__ game (any iteratively-solved problem can be solved recursively).
 
-2) Classes on default are private, whereas structures are public on default. Also (as an extra note), templates can only use class types.
+2) Classes on default are __private__, whereas structures are __public__ on default. Also (as an extra note), templates can only use class types.
 
 3) Possible issues include: Corruption of file, program hangs, and conflicts with other programs trying to open the file.
 
 4) This can be summed up in one word: Reusability. Class inheritance helps with being able to define new types without retyping a lot of code 
-(e.g. defining a )
+(e.g. defining a `Dog` with a generic `Animal` parent class).
 
 5) I could retype this, but I'd rather send you to [this link](http://www.learncpp.com/cpp-tutorial/115-inheritance-and-access-specifiers/). 
 `CTRL + F` and search for "To summarize in table form:" for a good visual aid.
 
 6) Both of these refer to polymorphic code (this was a bit of a trick question as a virtual method can also be a pure virtual method):
-- A pure virtual method is a method that is polymorphic and has no initial implementation (i.e. setting the method equal to zero). This is also known as an abstract method.
-- A virtual method is a method that is polymorphic. This is a more generalized term, and refers to any method that can be overridden in a class inheritance.
+- A __pure virtual__ method is a method that is __polymorphic__ and has __no initial implementation__ (i.e. setting the method equal to zero). This is also known as an __abstract method__.
+- A __virtual method__ is a method that is __polymorphic__ and noted by the `virtual` keyword. This is a more generalized term, and refers to any method that can be __overridden__ in a class inheritance.
 
 #### Syntax
 1) Factory function (example solution):
@@ -59,6 +60,7 @@ the first refers to [a characteristic of object-oriented programming](http://www
   enum CarType { PICKUP = 0, SPORTS, MINIVAN };  //enumerated type for convenience
   Car* generate_car(int seats, int numWheels, int type) {
     Car * c = nullptr;
+    
     switch(type) {
       case PICKUP:
         c = new PickupTruck(seats, numWheels);
@@ -95,7 +97,7 @@ the first refers to [a characteristic of object-oriented programming](http://www
       }
     }
     
-    return (upper + lower);            //return both concatenated
+    return (upper + lower);            //return both upper and lower concatenated
   }
 ```
 
