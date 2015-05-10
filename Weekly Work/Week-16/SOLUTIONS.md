@@ -25,11 +25,11 @@ __K__ Derived class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 __N__ Inheritance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __L__ Object
 
-__B__ friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __M__ Abstract Function
+__B__ friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __M__ Abstract Function
 
 __F__ Polymorphism &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __J__ Base class
 
-__I__ Template &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __C__ Static
+__I__ Template &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __C__ Static
 
 __D__ Copy Constructor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __A__ this
 
@@ -37,14 +37,16 @@ Note also that there is a difference between `Data Abstraction` and `abstract fu
 the first refers to [a characteristic of object-oriented programming](http://www.tutorialspoint.com/cplusplus/cpp_data_abstraction.htm), and the other refers to polymorphism.
 
 #### Concept
-1) __Recursive call__ and __base case__. Two examples: __Factorials__ and a solution to the __Tower of Hanoi__ game (any iteratively-solved problem can be solved recursively).
+1) __Recursive call__ and __base case__. Two examples: __Factorials__ and a solution to the __Tower of Hanoi__ game (really, any iteratively-solved problem can be solved recursively).
+
+__NOTE__: Something solved through an iterative process is one that is solved via a looping structure (such as a `for` or `while` loop).
 
 2) Classes on default are __private__, whereas structures are __public__ on default. Also (as an extra note), templates can only use class types.
 
 3) Possible issues include: Corruption of file, program hangs, and conflicts with other programs trying to open the file.
 
-4) This can be summed up in one word: Reusability. Class inheritance helps with being able to define new types without retyping a lot of code 
-(e.g. defining a `Dog` with a generic `Animal` parent class).
+4) This can be summed up in one word: __Reusability__. Class inheritance helps with being able to __define new data types__ without retyping a lot of code 
+(e.g. defining a `Dog` with generic methods or member variables from an `Animal` parent class).
 
 5) I could retype this, but I'd rather send you to [this link](http://www.learncpp.com/cpp-tutorial/115-inheritance-and-access-specifiers/). 
 `CTRL + F` and search for "To summarize in table form:" for a good visual aid.
