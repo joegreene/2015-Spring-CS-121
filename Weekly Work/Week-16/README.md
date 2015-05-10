@@ -21,7 +21,7 @@ N/A
 #### Wednesday
 We went over the pseudo-exam, which is posted [here](cs121_pseudo_exam.docx).
 
-Solutions for the exam can be found in SOLUTIONS.md, location near the top of this page or [here](SOLUTIONS.md).
+Solutions for the exam can be found in SOLUTIONS.md, location near the top of this page or [here](SOLUTIONS.md) (click 'View Raw' to download file).
 
 #### Thursday
 Same as Wednesday, except the pseudo-exam was updated to reflect the in-class announcement about the exam that same day.
