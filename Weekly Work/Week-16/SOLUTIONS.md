@@ -18,17 +18,17 @@ Below are the solutions per section.
 Although this will help you with a chunk of the terms on the exam, the best thing you can do for yourself is 
 make flashcards to know these.
 
-__H__ Data Abstraction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __E__ Operator overloading
+__H__ Data Abstraction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __E__ Operator overloading
 
-__K__ Derived class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __G__ Encapsulation
+__K__ Derived class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __G__ Encapsulation
 
-__N__ Inheritance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __L__ Object
+__N__ Inheritance &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __L__ Object
 
-__B__ friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __M__ Abstract Function
+__B__ friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __M__ Abstract Function
 
-__F__ Polymorphism &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __J__ Base class
+__F__ Polymorphism &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __J__ Base class
 
-__I__ Template &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __C__ Static
+__I__ Template &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __C__ Static
 
 __D__ Copy Constructor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __A__ this
 
